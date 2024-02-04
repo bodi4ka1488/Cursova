@@ -88,10 +88,8 @@ const products = [
     name: "Pasta Gora",
     price: "8.90",
   },
-  // Додайте сюди інші товари
 ];
 
-// Функція для встановлення зображень, імен і цін на сторінці
 function createBox(btn, fotoElement, nameElement, priceElement, product) {
   fotoElement.style.backgroundImage = `url(${product.foto})`;
   nameElement.innerHTML = product.name;
@@ -162,15 +160,9 @@ function addToCart(event) {
   console.log(cartProduct);
 }
 
-// Функція для очищення корзини
 function clearCart() {
-  // Очищення масиву корзини
   cartProduct = [];
-
-  // Оновлення відображення корзини на сторінці
 }
-
-// Функція для оновлення відображення корзини
 
 // ++++++++++++++++++++++++++++++++++++
 const cart = document.getElementById("myCart");
@@ -179,7 +171,6 @@ const cartContent = document.querySelector(".cart-content");
 const closeBtn = document.getElementsByClassName("close")[0];
 let sum = 0;
 
-// Open the modal when the button is clicked
 openCartBtn.onclick = function () {
   cartContent.innerHTML = "";
   if (Object.keys(cartProduct).length === 0) {
@@ -206,7 +197,6 @@ openCartBtn.onclick = function () {
       openCartBtn.click();
     });
 
-    // Додати елементи в модальне вікно
     cartContent.appendChild(cartItems);
     cartContent.appendChild(orderBtn);
     cartContent.appendChild(sumContainer);
@@ -225,12 +215,9 @@ window.onclick = function (event) {
   }
 };
 function removeProductByName(products, name) {
-  // Знаходимо індекс елемента за іменем
   var indexToRemove = products.findIndex(function (product) {
     return product.name === name;
   });
-
-  // Видаляємо елемент за індексом, якщо знайдено
   if (indexToRemove !== -1) {
     products.splice(indexToRemove, 1);
   }
