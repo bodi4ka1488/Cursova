@@ -5,13 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <link rel="stylesheet" href="./style.css" />
-
     <link
       rel="stylesheet"
       href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
       integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
-      crossorigin=""
+      crossorigin="1"
     />
+
+    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/modalCart.css" />
+    <link rel="stylesheet" href="/css/slider.css" />
+    <link rel="stylesheet" href="/css/about.css" />
+    <link rel="stylesheet" href="/css/menu.css" />
+    <link rel="stylesheet" href="/css/info.css" />
+    <link rel="stylesheet" href="/css/optionOrder.css" />
+    <link rel="stylesheet" href="/css/contact.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/player.css" />
     <script
       src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
       integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
@@ -22,20 +32,17 @@
 
   <body>
     <header>
-      <div class="wrapper">
+      <div class="header-wrapper">
         <div class="logo">
           <div class="container1">
-            <img class="logo_picture" src="./images/pizza-7.jpg" alt="laog" />
-            <div>Pizza</div>
+            <img class="logo_picture" src="./images/pizza-7.jpg" alt="logo" />
+            <span>PizzaHub</span>
           </div>
         </div>
-
         <nav class="dws-menu">
           <ul>
             <li><a href="#home">Home</a></li>
-            <li><a href="#menu">Menu</a></li>
-            <li><a href="#servises">Services</a></li>
-            <li><a href="#blog">Blog</a></li>
+            <li><a href="./menuDrink.html">Menu</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
             <li>
@@ -43,22 +50,27 @@
                 id="openCartBtn"
                 class="cartlogo"
                 src="./images/cart.png"
-                alt=""
+                alt="cart-Logo"
               />
             </li>
           </ul>
         </nav>
       </div>
     </header>
-    <div id="myCart" class="cart">
-      <div class="cart-content">
-        <span class="close">&times;</span>
-      </div>
-    </div>
     <main>
-      <div id="home" class="slideshow-container">
+      <!-- Cart -->
+      <div id="myCart" class="cart">
+        <div class="cart-content">
+          <span class="close">&times;</span>
+        </div>
+      </div>
+      <!-- Homepage -->
+      <section id="home" class="slideshow-container">
+        <!-- 1slide -->
         <div class="slide page active">
-          <div class="page-foto"><img src="./images/bg_1.png" alt="" /></div>
+          <div class="page-foto">
+            <img src="./images/bg_1.png" alt="background" title="background" />
+          </div>
           <div class="text-containet-page">
             <p>Welcome</p>
             <h2>We cooked your desired pizza recipe</h2>
@@ -67,13 +79,16 @@
               necessary regelialea</span
             >
             <div class="page-btns">
-              <div>Order Now</div>
+              <div><a href="#box">Order Now</a></div>
               <div><a href="#menu">View Menu</a></div>
             </div>
           </div>
         </div>
+        <!-- 2slide -->
         <div class="slide page">
-          <div class="page-foto"><img src="./images/bg_2.png" alt="" /></div>
+          <div class="page-foto">
+            <img src="./images/bg_2.png" alt="background" title="background" />
+          </div>
 
           <div class="text-containet-page">
             <p>Crunchy</p>
@@ -83,14 +98,16 @@
               necessary regelialea</span
             >
             <div class="page-btns">
-              <div>Order Now</div>
+              <div><a href="#box">Order Now</a></div>
               <div><a href="#menu">View Menu</a></div>
             </div>
           </div>
         </div>
-
+        <!-- 3slide -->
         <div class="slide page">
-          <div class="page-foto"><img src="./images/bg_3.png" alt="" /></div>
+          <div class="page-foto">
+            <img src="./images/bg_3.png" alt="background" title="background" />
+          </div>
 
           <div class="text-containet-page">
             <p>Delicious</p>
@@ -100,32 +117,32 @@
               necessary regelialea</span
             >
             <div class="page-btns">
-              <div>Order Now</div>
+              <div><a href="#box">Order Now</a></div>
               <div><a href="#menu">View Menu</a></div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <!-- About -->
-      <div class="page4">
-        <div class="headerPage4">
+      <section class="about">
+        <div class="header-about">
           <div class="part part1">
             <div>
-              <div class="headerPage4Icons phone"></div>
+              <div class="aboutIcons phone"></div>
               <h4>000(123) 465 7980</h4>
             </div>
             <p>A small river named duden flows</p>
           </div>
           <div class="part part2">
             <div>
-              <div class="headerPage4Icons target"></div>
+              <div class="aboutIcons target"></div>
               <h4>198 West 21th Street</h4>
             </div>
             <p>Suite 721 New York NY 10016</p>
           </div>
           <div class="part part3">
             <div>
-              <div class="headerPage4Icons clock"></div>
+              <div class="aboutIcons clock"></div>
               <h4>Open Monday-Friday</h4>
             </div>
             <p>8:00am - 9:00pm</p>
@@ -136,22 +153,25 @@
                 class="socialIcons instagram"
                 href="https://www.instagram.com/"
                 target="_blank"
+                rel="noopener noreferrer"
               ></a>
               <a
                 class="socialIcons facebook"
                 href="https://www.facebook.com/"
                 target="_blank"
+                rel="noopener noreferrer"
               ></a>
               <a
                 class="socialIcons twitter"
                 href="https://twitter.com/"
                 target="_blank"
+                rel="noopener noreferrer"
               ></a>
             </div>
           </div>
         </div>
-        <div id="about" class="page4-foto"></div>
-        <div class="page4-body">
+        <div id="about" class="about-foto"></div>
+        <div class="about-body">
           <h2>
             Welcome to
             <span
@@ -171,46 +191,11 @@
             where they abushed her for their
           </p>
         </div>
-      </div>
-      <!-- -------------- -->
-      <div id="servises" class="page5">
-        <div class="headerPage5">
-          <h4>Our servises</h4>
-          <p class="font">
-            For far away, behind the word mountains, far from the countries
-            Vokalia and Consonantia, there live the blind texts
-          </p>
-        </div>
-        <div class="bodyPage5">
-          <div>
-            <div class="icon"><div class="healyFood"></div></div>
-            <h5>Healthy foods</h5>
-            <p class="font">
-              Even the all-poweful Pointing has no control about the blind texts
-              it is an almost unorthographic.
-            </p>
-          </div>
-          <div>
-            <div class="icon"><div class="delivery"></div></div>
-            <h5>Fastes delivery</h5>
-            <p class="font">
-              Even the all-poweful Pointing has no control about the blind texts
-              it is an almost unorthographic.
-            </p>
-          </div>
-          <div>
-            <div class="icon"><div class="recipes"></div></div>
-            <h5>Original recipes</h5>
-            <p class="font">
-              Even the all-poweful Pointing has no control about the blind texts
-              it is an almost unorthographic.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div id="menu" class="page6">
-        <div>
-          <h3>hot pizza meals</h3>
+      </section>
+      <!-- menu -->
+      <section id="menu" class="menu">
+        <div class="title-wrapper">
+          <h3 id="menu_title">hot pizza meals</h3>
           <p>
             Far far away, behind the word mountains,far from the countries
             Vokalia and Consonantia, there live the blind texts
@@ -342,195 +327,29 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="page7">
-        <div class="head">
-          <h2>Our Menu Pricing</h2>
-          <div class="quaters"></div>
-          <p>
-            Far far away, behind the word mountains,far from the countries
-            Vokalia and Consonantia, there live the blind texts
-          </p>
-        </div>
-        <div>
-          <div class="menuLeft">
-            <div class="containerPage7">
-              <div class="page7Foto foto1"></div>
-              <div>
-                <div class="pizzaNameAndPrice">
-                  <h3>Italian Pizza</h3>
-                  <div class="line"></div>
-                  <span>$20.00</span>
-                </div>
-                <p>
-                  A small river Duden flows by place and supplies it with the
-                  necessary regelialea
-                </p>
-              </div>
-            </div>
+      </section>
 
-            <div class="containerPage7">
-              <div class="page7Foto foto2"></div>
-              <div>
-                <div class="pizzaNameAndPrice">
-                  <h3>Hawaiian Pizza</h3>
-                  <div class="line"></div>
-                  <span>$29.00</span>
-                </div>
-                <p>
-                  A small river Duden flows by place and supplies it with the
-                  necessary regelialea
-                </p>
-              </div>
-            </div>
-
-            <div class="containerPage7">
-              <div class="page7Foto foto3"></div>
-              <div>
-                <div class="pizzaNameAndPrice">
-                  <h3>Greek Pizza</h3>
-                  <div class="line"></div>
-                  <span>$20.00</span>
-                </div>
-                <p>
-                  A small river Duden flows by place and supplies it with the
-                  necessary regelialea
-                </p>
-              </div>
-            </div>
-
-            <div class="containerPage7">
-              <div class="page7Foto foto4"></div>
-              <div>
-                <div class="pizzaNameAndPrice">
-                  <h3>Bacon Crispy Thins</h3>
-                  <div class="line"></div>
-                  <span>$20.00</span>
-                </div>
-                <p>
-                  A small river Duden flows by place and supplies it with the
-                  necessary regelialea
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="menuRight">
-            <div class="containerPage7">
-              <div class="page7Foto foto5"></div>
-              <div>
-                <div class="pizzaNameAndPrice">
-                  <h3>Hawaiian Pizza</h3>
-                  <div class="line"></div>
-                  <span>$49.91</span>
-                </div>
-                <p>
-                  A small river Duden flows by place and supplies it with the
-                  necessary regelialea
-                </p>
-              </div>
-            </div>
-
-            <div class="containerPage7">
-              <div class="page7Foto foto6"></div>
-              <div>
-                <div class="pizzaNameAndPrice">
-                  <h3>Ultimate Overload</h3>
-                  <div class="line"></div>
-                  <span>$20.00</span>
-                </div>
-                <p>
-                  A small river Duden flows by place and supplies it with the
-                  necessary regelialea
-                </p>
-              </div>
-            </div>
-
-            <div class="containerPage7">
-              <div class="page7Foto foto7"></div>
-              <div>
-                <div class="pizzaNameAndPrice">
-                  <h3>Bacon Pizza</h3>
-                  <div class="line"></div>
-                  <span>$20.00</span>
-                </div>
-                <p>
-                  A small river Duden flows by place and supplies it with the
-                  necessary regelialea
-                </p>
-              </div>
-            </div>
-
-            <div class="containerPage7">
-              <div class="page7Foto foto8"></div>
-              <div>
-                <div class="pizzaNameAndPrice">
-                  <h3>Ham & Pinapple</h3>
-                  <div class="line"></div>
-                  <span>$20.00</span>
-                </div>
-                <p>
-                  A small river Duden flows by place and supplies it with the
-                  necessary regelialea
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="page8">
-        <div class="headFoto">
+      <section class="info">
+        <div class="infoFoto">
           <div></div>
           <div></div>
           <div></div>
           <div></div>
         </div>
-        <div class="bodyPage8">
-          <div class="containerPage8">
-            <div class="icon">
-              <div class="page8Icon1"></div>
-            </div>
-            <span>100</span>
-            <p>Pizza Branches</p>
-          </div>
-
-          <div class="containerPage8">
-            <div class="icon">
-              <div class="page8Icon2"></div>
-            </div>
-            <span>85</span>
-            <p>Number of Awards</p>
-          </div>
-
-          <div class="containerPage8">
-            <div class="icon">
-              <div class="page8Icon3"></div>
-            </div>
-            <span>10,567</span>
-            <p>Happy Customer</p>
-          </div>
-
-          <div class="containerPage8">
-            <div class="icon">
-              <div class="page8Icon4"></div>
-            </div>
-            <span>900</span>
-            <p>Staff</p>
-          </div>
-        </div>
-      </div>
-      <div class="page9">
-        <div class="leftPart9"></div>
-        <div class="rightPart9">
+      </section>
+      <section class="optionOrder">
+        <div class="optionOrder-left"></div>
+        <div class="optionOrder-right">
           <div class="dws-menu">
             <ul>
-              <li class="page9Btns"><a>Pizza</a></li>
-              <li class="page9Btns"><a>Drinks</a></li>
-              <li class="page9Btns"><a>Burgers</a></li>
-              <li class="page9Btns"><a>Past</a></li>
+              <li class="optionOrderBtn"><a>Pizza</a></li>
+              <li class="optionOrderBtn"><a>Drinks</a></li>
+              <li class="optionOrderBtn"><a>Burgers</a></li>
+              <li class="optionOrderBtn"><a>Past</a></li>
             </ul>
           </div>
           <div class="body9">
-            <div class="box">
+            <div class="box" id="box">
               <div class="foto9 foto9_1"></div>
               <h3 class="name"></h3>
 
@@ -555,159 +374,120 @@
             </div>
           </div>
         </div>
-      </div>
-
-      <div id="blog" class="page10">
-        <h2>Recent From Blog</h2>
-        <p>
-          Far far away, behind the word mountains,far from the countries Vokalia
-          and Consonantia, there live the blind texts
-        </p>
-
-        <div class="body10">
-          <div class="box10">
-            <div class="foto10_1"></div>
-            <p>Sept.10,2024 <span class="icon10"></span> 3</p>
-            <h3>The Delicious Pizza</h3>
-            <p>
-              A small river Duden flows by place and supplies it with the
-              necessary regelialea
-            </p>
-          </div>
-
-          <div class="box10">
-            <div class="foto10_2"></div>
-            <p>Sept.10,2024 <span class="icon10"></span> 3</p>
-            <h3>The Delicious Pizza</h3>
-            <p>
-              A small river Duden flows by place and supplies it with the
-              necessary regelialea
-            </p>
-          </div>
-
-          <div class="box10">
-            <div class="foto10_3"></div>
-            <p>Sept.10,2024 <span class="icon10"></span> 3</p>
-            <h3>The Delicious Pizza</h3>
-            <p>
-              A small river Duden flows by place and supplies it with the
-              necessary regelialea
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="page11">
+      </section>
+      <div class="contactandmap">
         <div id="map"></div>
         <div id="contact" class="contact">
           <h2>Contact Us</h2>
-          <form name="loginForm">
+          <form
+            action="index.html"
+            method="get"
+            enctype="application/x-www-form-urlencoded"
+            name="loginForm"
+            id="myForm"
+          >
             <div class="form-grop">
               <input
+                id="nameInput"
+                tabindex="1"
                 type="text"
-                name="loginInput"
+                name="FirstName"
                 placeholder="First Name"
                 required
+                pattern=".*[A-Z].*"
               />
             </div>
             <div class="form-grop">
               <input
+                tabindex="2"
                 type="text"
-                name="passwordInput"
+                name="LastName"
                 placeholder="Last Name"
                 required
               />
             </div>
             <div class="form-grop">
               <textarea
+                tabindex="3"
+                wrap="soft"
                 required
                 name="commentTextArea"
                 placeholder="Massage"
               ></textarea
               ><br />
             </div>
+
+            <h3>Rewiev 1 to 10</h3>
+            <input
+              type="range"
+              id="range"
+              name="range"
+              min="1"
+              max="10"
+              step="1"
+              required
+            />
+            <div id="range-value"></div>
+            <h3>What need to improve site</h3>
+            <select name="multi" id="multi" class="select" size="3" multiple>
+              <option selected value="Design" tabindex="4">Design</option>
+              <option value="Structure" tabindex="5">Structure</option>
+              <option value="New functioality " tabindex="6">
+                New functioality
+              </option>
+            </select>
+            <fieldset title="Block of subscriptions and agreements">
+              <legend style="text-align: center">
+                Block of subscriptions and agreements
+              </legend>
+              <div class="checkbox">
+                <input
+                  type="checkbox"
+                  id="checkbox_btn1"
+                  name="checkbox_btn"
+                  value="agree with editing"
+                  tabindex="21"
+                  checked
+                  required
+                />
+                <label for="checkbox_btn1"
+                  ><span class="req"> * </span>I authorize the processing of my
+                  data</label
+                ><br />
+                <input
+                  type="checkbox"
+                  id="checkbox_btn2"
+                  name="checkbox_btn"
+                  value="agree with subscribtion"
+                  tabindex="22"
+                  required
+                />
+                <label for="checkbox_btn2"
+                  ><span class="req"> * </span>I agree to subscribe</label
+                ><br />
+              </div>
+            </fieldset>
             <div>
               <button id="formBtn" type="submit">Send</button>
             </div>
+            <div id="message"></div>
           </form>
         </div>
       </div>
     </main>
+    <div class="player">
+      <div>How our pizza cooked</div>
+      <video controls poster="./images/bg_2.png" height="300px" width="500px">
+        <source src="media/pizza.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div>Relax music for wait</div>
+      <audio controls>
+        <source src="media/pisnia.mp3" type="audio/mp3" />
+        Your browser does not support the audio element.
+      </audio>
+    </div>
     <footer>
-      <div class="footerInfo">
-        <div class="boxFooter">
-          <h2>About us</h2>
-          <p>
-            Far far away, behind the word mountains,far from the countries
-            Vokalia and Consonantia, there live the blind texts
-          </p>
-        </div>
-        <div class="boxFooter">
-          <h2>Recent Blog</h2>
-          <div class="blogContent">
-            <div class="fotoFooter foto1footer"></div>
-            <div class="blogInfo">
-              <h4>Even the all-powerful Pointing has no control about</h4>
-              <p>
-                <span class="icon1"></span>Sept 15, 2022
-                <span class="icon2"></span> <span class="icon3"></span> 19
-              </p>
-            </div>
-          </div>
-          <div class="blogContent">
-            <div class="fotoFooter foto2footer"></div>
-            <div class="blogInfo">
-              <h4>Even the all-powerful Pointing has no control about</h4>
-              <p>
-                <span class="icon1"></span>Sept 15, 2022
-                <span class="icon2"></span> <span class="icon3"></span> 19
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="boxFooter">
-          <h2>Services</h2>
-          <p>Cooked</p>
-          <p>Delivery</p>
-          <p>Quality Foods</p>
-          <p>Mixed</p>
-        </div>
-
-        <div class="boxFooter">
-          <h2>Have a questions?</h2>
-          <div>
-            <div class="fotterIcons icon-location"></div>
-            <p>203 Fake St.Mountain,View, San Francisco, California,USA</p>
-          </div>
-          <div>
-            <div class="fotterIcons icon-phone"></div>
-            <p>+2 365 43 53 123</p>
-          </div>
-          <div>
-            <div class="fotterIcons icon-email"></div>
-            <p>info@youradmin.com</p>
-          </div>
-        </div>
-      </div>
-      <div class="social">
-        <div>
-          <a
-            class="socialIcons instagram"
-            href="https://www.instagram.com/"
-            target="_blank"
-          ></a>
-          <a
-            class="socialIcons facebook"
-            href="https://www.facebook.com/"
-            target="_blank"
-          ></a>
-          <a
-            class="socialIcons twitter"
-            href="https://twitter.com/"
-            target="_blank"
-          ></a>
-        </div>
-      </div>
       <div class="copyright">
         <p>
           Copyright @2022 All rughts reserved | This template is made with love
@@ -717,4 +497,11 @@
     </footer>
   </body>
   <script src="./js/slider.js"></script>
+  <script src="./js/cart.js"></script>
+  <script src="./js/form.js"></script>
+  <script src="./js/map.js"></script>
+  <script src="./js/products.js"></script>
+  <script src="./js/anchor.js"></script>
+  <script src="./js/addFoto.js"></script>
+  <script src="./js/player.js"></script>
 </html>

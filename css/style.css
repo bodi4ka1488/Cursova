@@ -1,0 +1,25 @@
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter.ttf");
+}
+@import url("https://fonts.googleapis.com/css2?family=Square+Peg&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: 1rem;
+  font-family: "Inter", sans-serif;
+  color: #ffffff;
+  line-height: 1.4;
+}
+
+h1 {
+  margin: 0 0 2rem;
+}
+footer {
+  width: 100%;
+  background-color: black;
+  line-height: 30px;
+  text-align: center;
+}

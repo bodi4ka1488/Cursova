@@ -1,0 +1,60 @@
+header {
+  position: relative;
+}
+.header-wrapper {
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  background: #121618;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 9999;
+}
+.logo {
+  text-align: center;
+  color: #ffffff;
+  width: 40%;
+}
+.container1 {
+  display: flex;
+  gap: 10px;
+  padding-left: 33%;
+}
+
+.logo_picture {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.dws-menu > ul {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+
+.dws-menu ul li a {
+  display: block;
+  padding: 15px 30px 15px 30px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 15px;
+  transition: all 0.5s ease;
+}
+
+.dws-menu ul li a:hover {
+  color: #eb8e31;
+  transition: all 0.3s ease;
+}
+.cartlogo {
+  line-height: 30px;
+  width: 40px;
+  filter: invert(100%);
+  display: block;
+  padding: 15px 30px 15px 30px;
+}
+.cartlogo:hover {
+  filter: invert(50%);
+}

@@ -1,0 +1,86 @@
+.optionOrder {
+    width: 100%;
+    height: 700px;
+    background: url(../images/bg_4.jpg);
+    display: flex;
+  }
+  .optionOrder-left {
+    width: 35%;
+    height: 90%;
+    background: url(../images/about.jpg);
+    background-position: center;
+  }
+  .optionOrder-right {
+    padding: 60px 0 0 60px;
+    width: 65%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .optionOrder-right > .dws-menu ul,
+  .optionOrder-right > .dws-menu ol {
+    list-style: none;
+  }
+  .optionOrder-right > .dws-menu > ul {
+    display: flex;
+    justify-content: flex-start;
+    gap: 5px;
+  }
+  .optionOrder-right > .dws-menu > ul li a {
+    border: 2px solid #f8c364;
+    display: block;
+    padding: 15px 20px 15px 20px;
+    margin-bottom: 30px;
+    color: #ffffff;
+    transition: all 0.5s ease;
+  }
+  
+  .optionOrder-right > .dws-menu li a:hover {
+    background-color: #f8c364;
+    color: black;
+    transition: all 0.3s ease;
+  }
+  
+  .price {
+    color: #f8c364;
+    font-size: 18px;
+  }
+  .body9 {
+    display: flex;
+    flex-direction: row;
+  }
+  .box {
+    width: 400px;
+    margin-right: 10px;
+    height: 430px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .foto9 {
+    width: 220px;
+    height: 200px;
+    border-radius: 50%;
+  }
+  .foto9_1 {
+    background: url(../images/pizza-2.jpg);
+  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .foto9_2 {
+    background: url(../images/pizza-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .foto9_3 {
+    background: url(../images/pizza-3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }

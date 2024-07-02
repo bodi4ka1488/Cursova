@@ -1,0 +1,180 @@
+.menu {
+  width: 100%;
+  height: 110%;
+  background: url(../images/bg_4.jpg);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    ".. head .."
+    "row1_1 row1_2 row1_3"
+    "row2_1 row2_2 row2_3";
+}
+.title-wrapper {
+  grid-area: head;
+  text-align: center;
+}
+#menu_title {
+  font-weight: 300;
+  font-size: 30px;
+  letter-spacing: 5px;
+  padding: 50px 0 30px 0;
+  text-transform: uppercase;
+}
+.menu > p {
+  color: #806d6d;
+  font-size: 17px;
+}
+.menu div:nth-child(2) {
+  grid-area: row1_1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "foto1 text1";
+  justify-items: stretch;
+}
+.menu div:nth-child(2) > div:nth-child(1) {
+  grid-area: foto1;
+  background: url(../images/pizza-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 265px;
+}
+.menu div:nth-child(2) > div:nth-child(2) {
+  padding: 10px;
+  grid-area: text1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background: rgba(5, 4, 4, 0.314);
+}
+
+.menu div:nth-child(3) {
+  grid-area: row1_2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "foto2 text2";
+  justify-items: stretch;
+}
+.menu div:nth-child(3) > div:nth-child(1) {
+  grid-area: foto2;
+  background: url(../images/pizza-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 265px;
+}
+.menu div:nth-child(3) > div:nth-child(2) {
+  grid-area: text2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background: rgba(5, 4, 4, 0.314);
+}
+
+.menu div:nth-child(4) {
+  grid-area: row1_3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "foto3 text3";
+  justify-items: stretch;
+}
+.menu div:nth-child(4) > div:nth-child(1) {
+  grid-area: foto3;
+  background: url(../images/pizza-3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 265px;
+}
+.menu div:nth-child(4) > div:nth-child(2) {
+  padding: 10px;
+  grid-area: text3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background: rgba(5, 4, 4, 0.314);
+}
+.menu div:nth-child(5) {
+  grid-area: row2_1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "text4 foto4";
+  justify-items: stretch;
+}
+.menu div:nth-child(5) > div:nth-child(1) {
+  grid-area: foto4;
+  background: url(../images/pizza-4.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 265px;
+}
+.menu div:nth-child(5) > div:nth-child(2) {
+  padding: 10px;
+  grid-area: text4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background: rgba(5, 4, 4, 0.314);
+}
+.menu div:nth-child(6) {
+  grid-area: row2_2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "text5 foto5";
+  justify-items: stretch;
+}
+.menu div:nth-child(6) > div:nth-child(1) {
+  grid-area: foto5;
+  background: url(../images/pizza-5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 265px;
+}
+.menu div:nth-child(6) > div:nth-child(2) {
+  padding: 10px;
+  grid-area: text5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background: rgba(5, 4, 4, 0.314);
+}
+.menu div:nth-child(7) {
+  grid-area: row2_3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "text6 foto6";
+  justify-items: stretch;
+}
+.menu div:nth-child(7) > div:nth-child(1) {
+  grid-area: foto6;
+  background: url(../images/pizza-6.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 265px;
+}
+.menu div:nth-child(7) > div:nth-child(2) {
+  padding: 10px;
+  grid-area: text6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background: rgba(5, 4, 4, 0.314);
+}
+.btn {
+  text-align: center;
+  font-size: 17px;
+  width: max-content;
+  height: 30px;
+  padding: 3px;
+  border: 1px solid wheat;
+  cursor: pointer;
+}
+.btn:hover {
+  color: #eb8e31;
+  border: 1px solid #eb8e31;
+}
+.menu span {
+  font-size: 17px;
+  font-weight: 300;
+  padding-top: 5px;
+  color: #eb8e31;
+  width: fit-content;
+}

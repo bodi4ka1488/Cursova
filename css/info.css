@@ -1,0 +1,11 @@
+.info {
+    width: 100%;
+    height: 350px;
+  }
+  .infoFoto {
+    height: 100%;
+    display: flex;
+  }
+  .infoFoto div {
+    width: 27%;
+  }

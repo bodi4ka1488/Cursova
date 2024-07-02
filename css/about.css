@@ -1,0 +1,157 @@
+.about {
+  height: 600px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: 150px auto;
+  grid-template-areas:
+    "head head head head head"
+    "foto foto foto main main";
+  background-color: black;
+}
+
+.header-about {
+  display: grid;
+  grid-area: head;
+  grid-template-columns: 5% 20% 22% 20% 30%;
+  gap: 20px;
+  grid-template-areas: "zoro part1 part2 part3 social";
+  overflow: hidden;
+}
+
+.part {
+  padding-top: 40px;
+}
+
+.part div {
+  display: flex;
+  gap: 20px;
+  align-content: center;
+  padding-bottom: 12px;
+}
+
+.aboutIcons {
+  width: 20px;
+  height: 20px;
+}
+
+.phone {
+  background: url(../images/phone-call.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.target {
+  background: url(../images/targets.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.clock {
+  background: url(../images/wall-clock.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.part h4 {
+  font-weight: 300;
+}
+
+.headerPage4 p {
+  padding-left: 60px;
+  font-size: 20px;
+  color: #8e7f7f;
+}
+
+.part1 {
+  grid-area: part1;
+}
+
+.part2 {
+  grid-area: part2;
+}
+
+.part3 {
+  grid-area: part3;
+}
+
+.social {
+  padding-left: 40px;
+  grid-area: social;
+  background: #dddd39;
+}
+
+.social div {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+
+.socialIcons {
+  margin-right: 20px;
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.facebook {
+  background-image: url(../images/facebook.png);
+  filter: invert(100%);
+}
+
+.instagram {
+  background-image: url(../images/instagram.png);
+  filter: invert(100%);
+}
+
+.twitter {
+  background-image: url(../images/twitte.png);
+  filter: invert(100%);
+}
+
+.facebook:hover {
+  filter: invert(0%);
+}
+.instagram:hover {
+  filter: invert(0%);
+}
+.twitter:hover {
+  filter: invert(0%);
+}
+.about-foto {
+  grid-area: foto;
+  background-image: url(../images/about.jpg);
+  width: 850px;
+}
+
+.about-body {
+  grid-area: main;
+  background-image: url(../images/bg_4.jpg);
+  padding: 80px 20px 40px 60px;
+}
+
+.about-body h2 {
+  font-size: 30px;
+  padding-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.about-body span {
+  color: #dddd39;
+}
+.iconPizza {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: url(../images/pizza.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.about-body p {
+  color: rgb(142, 127, 127);
+  font-size: 18px;
+}

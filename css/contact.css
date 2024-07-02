@@ -1,0 +1,79 @@
+.contactandmap {
+  width: 100%;
+  background: black;
+  display: flex;
+  flex-direction: row;
+}
+#map {
+  height: 560px;
+  width: 50%;
+}
+.contact {
+  padding-left: 60px;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contact > h2 {
+  font-size: 30px;
+  font-weight: 200;
+}
+.form-grop {
+  padding: 20px 0 10px 0;
+  display: flex;
+  flex-direction: column;
+}
+button {
+  width: 90px;
+  height: 50px;
+  background-color: #f8c364;
+  cursor: pointer;
+}
+input,
+textarea {
+  font-size: 20px;
+  background-color: black;
+  color: white;
+  border-top: 0px;
+  border-left: 0px;
+  resize: vertical;
+  color: white;
+  border-right: 0;
+  border-bottom: 1px solid white;
+  outline: none;
+}
+h4 {
+  letter-spacing: 3px;
+}
+#message {
+  display: none;
+  background-color: black;
+  padding: 10px;
+  margin-top: 10px;
+}
+.checkbox input[type="checkbox"] {
+  display: none;
+}
+
+.checkbox label {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+}
+
+.checkbox label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  border: 2px solid #f7eeee;
+  border-radius: 3px;
+}
+
+.checkbox input[type="checkbox"]:checked + label::before {
+  background-color: #45c924;
+}
